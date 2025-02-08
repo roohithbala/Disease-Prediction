@@ -99,10 +99,10 @@ elif disease == "Heart Disease":
 elif disease == "Diabetes":
     st.header("Diabetes Prediction")
     st.write("Enter the following health details:")
-    glucose = st.number_input("Glucose Level", value=120, min_value=0, max_value=300)
-    blood_pressure = st.number_input("Blood Pressure (mm Hg)", value=80, min_value=0, max_value=200)
+    glucose = st.number_input("Glucose Level", value=120, min_value=0, max_value=1000)
+    blood_pressure = st.number_input("Blood Pressure (mm Hg)", value=80, min_value=0, max_value=300)
     skin_thickness = st.number_input("Skin Thickness (mm)", value=20, min_value=0, max_value=100)
-    insulin = st.number_input("Insulin Level (μU/ml)", value=85, min_value=0, max_value=900)
+    insulin = st.number_input("Insulin Level (μU/ml)", value=85, min_value=0, max_value=1200)
     bmi = st.number_input("Body Mass Index (BMI)", value=25.0, min_value=0.0, max_value=100.0, step=0.1)
     dpf = st.number_input("Diabetes Pedigree Function", value=0.5, min_value=0.0, max_value=2.5, step=0.1)
     age = st.number_input("Age", value=35, min_value=1, max_value=120)
